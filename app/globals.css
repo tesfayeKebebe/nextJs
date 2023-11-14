@@ -41,7 +41,7 @@ img {
     @apply flex items-center;
   }
   .icon-margin {
-   margin-bottom:-13px;
+   margin-bottom:-7px;
   }
   .header-border {
     border-bottom: 1px solid black ;

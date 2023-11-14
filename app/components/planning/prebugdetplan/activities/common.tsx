@@ -2,6 +2,15 @@ import React from 'react'
 import Image from "next/image";
 const Common=()=>{
   return (
+    <>
+     <div className="flex-item-center">
+    <div className="border  ms-2  w-20 text-sm text-center bg-white">
+      2023
+    </div>
+    <div className="text-sm text-center border ms-1 w-20 bg-white">
+      2024
+    </div>
+  </div>
     <div className="bg-white mr-4 border">
     <div className="flex-item-center justify-between">
       <div  className="p-3 text-sm font-bold">
@@ -43,6 +52,8 @@ const Common=()=>{
 
     </div>
   </div>
+    </>
+   
   )
 
 }

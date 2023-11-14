@@ -15,33 +15,22 @@ const pagination: React.FC<PaginationProps>  = ({ items, pageSize, currentPage, 
    
      return (
       <div>
-        <nav aria-label="Pagination" className=" flex flex-row justify-end text-gray-600">
-  <a href="#" className="p-2 mr-1 rounded text-blue-400	"> 
-  <span>&#8804;</span>
+        <nav aria-label="Pagination" className=" flex flex-row justify-end text-gray-600 pt-2 mr-1 text-xs">
+  <a href="#" className="py-1 underline  text-cyan-300	"> 
+  <span>&#60;</span>
   </a>
-  <a href="#" className="px-4 py-2 rounded hover:bg-gray-100"> 1 </a>
-  <a href="#" className="px-4 py-2 rounded bg-gray-200 text-gray-900 font-medium hover:bg-gray-100"> 2 </a>
-  <a href="#" className="px-4 py-2 rounded hover:bg-gray-100"> 3 </a>
-  <a href="#" className="px-4 py-2 rounded hover:bg-gray-100"> ... </a>
-  <a href="#" className="px-4 py-2 rounded hover:bg-gray-100"> 9 </a>
-  <a href="#" className="p-2 ml-4 rounded text-cyan-300 ">
-   <span>&#8805;</span>
+  <a href="#" className="px-1 py-1 underline  text-cyan-300"> 1 </a>
+  <a href="#" className="px-1 py-1 underline text-cyan-300"> 2 </a>
+  <a href="#" className="px-1  py-1 underline text-cyan-300"> 3 </a>
+  <a href="#" className="px-1  py-1 underline text-cyan-300"> 4 </a>
+  <a href="#" className="px-1  py-1  text-cyan-300"> ... </a>
+  <a href="#" className="px-1  py-1 underline text-cyan-300"> 9 </a>
+  <a href="#" className="px-1  py-1 underline text-cyan-300"> 10 </a>
+  <a href="#" className="px-1  py-1 underline text-cyan-300 ">
+   <span>&#62;</span>
   </a>
 </nav>
-        {/* <ul className="pagination">
-          {pages.map((page) => (
-            <li
-              key={page}
-              className={
-                page === currentPage ? "pageItemActive" : "pageItem"
-              }
-            >
-              <a className={"pageLink"} onClick={() => onPageChange(page)}>
-                {page}
-              </a>
-            </li>
-          ))}
-        </ul> */}
+     
       </div>
     );
 }

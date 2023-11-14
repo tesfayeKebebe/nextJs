@@ -12,11 +12,11 @@ const HeaderPage = () => {
             <Image
               src="/logo.png"
               alt=""
-              width={20}
+              width={16}
               height={2}
               className="icon-margin"
             />
-            <Image src="/logo.png" alt="" width={20} height={2} />
+            <Image src="/logo.png" alt="" width={16} height={2} />
           </div>
           <div className="text-right mr-2  text-xs">Organization Name</div>
         </div>
