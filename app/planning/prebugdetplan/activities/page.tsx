@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Common from "@/app/components/planning/prebugdetplan/activities/common";
-import ProcurementList from "@/app/components/planning/prebugdetplan/activities/procurementList";
+import PlanActivities from "@/app/components/planning/prebugdetplan/activities/activities";
 const Activity = () => {
   return (
     <>
@@ -28,7 +28,7 @@ const Activity = () => {
             </span>
           </div>
         </div>
-       <ProcurementList isHidden={false}/>
+       <PlanActivities/>
       </div>
     </>
   );
