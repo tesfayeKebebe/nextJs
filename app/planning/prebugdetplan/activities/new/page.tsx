@@ -21,14 +21,18 @@ const Activity = () => {
             </div>
           </div>
           <div className="flex ps-1 pt-2">
-            <div className="border  border-black w-full  mr-3 ">
+            <div className="border  border-black w-full  mr-1 ">
               <span className="flex-item-center  ps-1 ">
+                <span>
                 <Image src="/search.png" alt="" width={16} height={10} />
+                </span>
+                <span>
                 <input
                   type="text"
                   placeholder="Search..."
                   className="ps-1 text-xs border-none  w-28"
                 />
+                  </span>
               </span>
             </div>
             <div className="flex-item-center justify-center border border-black rounded-sm  w-6  p-1 mr-2">

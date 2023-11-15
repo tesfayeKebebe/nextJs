@@ -187,7 +187,7 @@ const PlanActivities = () => {
           })}
         </tbody>
       </table>
-      <Pagination isAtTheBeginning={false}
+      <Pagination 
         items={20} // 100
         currentPage={currentPage} // 1
         pageSize={pageSize} // 10

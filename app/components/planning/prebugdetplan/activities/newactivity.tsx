@@ -44,24 +44,25 @@ const NewActivity = () => {
         <tbody>
           {dataList.map((activity) => {
             return (
-              <tr className="text-xs  border-b-2 " key={activity.id}>
-                <td >
-                  <span className="flex justify-between">
-                    <span className="text-left s-2 align-bottom pr-4 grow">
+              <tr className="text-xs border-b-2" key={activity.id}>
+              <td>
+                <div className="flex ">
+                  <div className="text-xs p-2 pr-4 grow self-end pb-0">
                     {activity.name}
-                    </span>
-                    <span className="text-right border border-black rounded-sm  w-4 ">
-                      <Image src="/forward.png" alt="" width={16} height={10} />
-                      </span>
-                  </span>
-                </td>
-              </tr>
+                  </div>
+                  {activity.id === 1 && (
+                    <div className="flex border border-black rounded-sm w-4">
+                      <Image src="/forward.png" alt="" width={12} height={10} />
+                    </div>
+                  )}
+                </div>
+              </td>
+            </tr>
             );
           })}
         </tbody>
       </table>
       <Pagination
-        isAtTheBeginning={true}
         items={20} // 100
         currentPage={currentPage} // 1
         pageSize={pageSize} // 10
